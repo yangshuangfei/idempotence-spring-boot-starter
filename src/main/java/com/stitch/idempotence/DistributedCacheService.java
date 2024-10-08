@@ -1,4 +1,4 @@
-package com.qiaqiafood.idempotence;
+package com.stitch.idempotence;
 
 import org.springframework.data.redis.core.RedisTemplate;
 

@@ -1,6 +1,6 @@
-package com.qiaqiafood.idempotence.annotation;
+package com.stitch.idempotence.annotation;
 
-import com.qiaqiafood.idempotence.CacheType;
+import com.stitch.idempotence.CacheType;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

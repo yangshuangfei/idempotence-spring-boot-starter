@@ -1,7 +1,7 @@
-package com.qiaqiafood.idempotence;
+package com.stitch.idempotence;
 
 import com.github.benmanes.caffeine.cache.Cache;
-import com.qiaqiafood.idempotence.aspect.IdempotentAspect;
+import com.stitch.idempotence.aspect.IdempotentAspect;
 import org.springframework.boot.autoconfigure.AutoConfigureAfter;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;

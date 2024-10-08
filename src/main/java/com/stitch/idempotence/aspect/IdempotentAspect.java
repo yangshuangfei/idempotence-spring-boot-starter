@@ -1,15 +1,13 @@
-package com.qiaqiafood.idempotence.aspect;
+package com.stitch.idempotence.aspect;
 
 import com.github.benmanes.caffeine.cache.Cache;
-import com.qiaqiafood.idempotence.CacheType;
-import com.qiaqiafood.idempotence.DistributedCacheService;
-import com.qiaqiafood.idempotence.annotation.Idempotent;
+import com.stitch.idempotence.CacheType;
+import com.stitch.idempotence.DistributedCacheService;
+import com.stitch.idempotence.annotation.Idempotent;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.reflect.MethodSignature;
-import org.springframework.beans.factory.annotation.Required;
-import org.springframework.stereotype.Component;
 import org.springframework.util.DigestUtils;
 import org.springframework.util.StringUtils;
 
@@ -26,7 +24,7 @@ public class IdempotentAspect {
         this.distributedCacheService = distributedCacheService;
     }
 
-    @Around("@annotation(com.qiaqiafood.idempotence.annotation.Idempotent)")
+    @Around("@annotation(com.stitch.idempotence.annotation.Idempotent)")
     public Object preventDuplicateSubmit(ProceedingJoinPoint joinPoint) throws Throwable {
         MethodSignature signature = (MethodSignature) joinPoint.getSignature();
         Method method = signature.getMethod();

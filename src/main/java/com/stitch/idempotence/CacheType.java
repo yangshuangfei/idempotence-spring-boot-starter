@@ -1,4 +1,4 @@
-package com.qiaqiafood.idempotence;
+package com.stitch.idempotence;
 
 public enum CacheType {
     LOCAL,

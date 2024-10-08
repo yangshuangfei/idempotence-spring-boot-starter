@@ -1,0 +1,15 @@
+{
+  "properties": [
+    {
+      "name": "mystarter.mode",
+      "type": "com.qiaqiafood.idempotence.CacheType",
+      "description": "配置模式，可以是 'LOCAL' 或 'DISTRIBUTED'",
+      "sourceType": "com.qiaqiafood.idempotence.IdempotentProperties",
+      "defaultValue": "LOCAL",
+      "values": [
+        "LOCAL",
+        "DISTRIBUTED"
+      ]
+    }
+  ]
+}

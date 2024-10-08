@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.qiaqiafood.idempotence.RedisConfig,\
+  com.qiaqiafood.idempotence.CacheConfig,\
+com.qiaqiafood.idempotence.IdempotenceAutoConfiguration

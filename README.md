@@ -4,7 +4,7 @@
 
 ```xml
 <dependency>
-    <groupId>com.stitch</groupId>
+    <groupId>io.github.yangshuangfei</groupId>
     <artifactId>idempotence-spring-boot-starter</artifactId>
     <version>1.0.0</version>
 </dependency>
@@ -58,12 +58,10 @@
 
 
 ## 本地模式
-
+本地模式中只需要配置成local即可
 ```yaml
 idempotent.cache-type=local
 ```
-
-本地模式中只需要配置成local即可
 
 ```Java
 @Idempotent(type = CacheType.LOCAL, timeout = 5)
@@ -72,12 +70,10 @@ idempotent.cache-type=local
 
 
 ## Redis模式
-
+还需要配置redis连接信息
 ```yaml
 idempotent.cache-type=distributed
 ```
-
-还需要配置redis连接信息
 
 ```java
 @Idempotent(type = CacheType.DISTRIBUTED, timeout = 5)
